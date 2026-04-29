@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grand Opening — London</title>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;600;700&display=swap');
+
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; }
+
+    body {
+      background-color: #0a0a0a;
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrapper {
+      max-width: 640px;
+      margin: 0 auto;
+      background: #0a0a0a;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(160deg, #0a0a0a 0%, #111 40%, #0d1a0f 100%);
+      padding: 60px 48px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-rule {
+      display: block;
+      width: 1px;
+      height: 64px;
+      background: linear-gradient(to bottom, transparent, #c9a84c);
+      margin: 0 auto 32px;
+    }
+
+    .eyebrow {
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.35em;
+      color: #c9a84c;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      display: block;
+    }
+
+    .headline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 68px;
+      font-weight: 300;
+      line-height: 1.0;
+      color: #f5f0e8;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+
+    .headline em {
+      font-style: italic;
+      color: #c9a84c;
+    }
+
+    .sub-headline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 28px;
+      font-weight: 300;
+      font-style: italic;
+      color: #7a8c7b;
+      margin-bottom: 40px;
+      letter-spacing: 0.02em;
+    }
+
+    /* Date strip */
+    .date-strip {
+      background: #c9a84c;
+      padding: 20px 48px;
+      display: flex;
+      text-align: center;
+    }
+
+    .date-strip table {
+      width: 100%;
+    }
+
+    .date-block {
+      display: inline-block;
+      padding: 0 24px;
+      border-right: 1px solid rgba(10,10,10,0.2);
+      text-align: center;
+    }
+
+    .date-block:last-child {
+      border-right: none;
+    }
+
+    .date-label {
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      color: rgba(10,10,10,0.6);
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .date-value {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #0a0a0a;
+      display: block;
+      line-height: 1.1;
+    }
+
+    /* Body content */
+    .body-section {
+      background: #0f0f0f;
+      padding: 56px 48px;
+      border-left: 1px solid #1e1e1e;
+      border-right: 1px solid #1e1e1e;
+    }
+
+    .intro-text {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 22px;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.6;
+      color: #c5bfb3;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 32px 0;
+    }
+
+    .divider-inner {
+      display: inline-block;
+      position: relative;
+    }
+
+    .divider-line {
+      display: inline-block;
+      width: 80px;
+      height: 1px;
+      background: #2a2a2a;
+      vertical-align: middle;
+    }
+
+    .divider-diamond {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #c9a84c;
+      transform: rotate(45deg);
+      margin: 0 12px;
+      vertical-align: middle;
+    }
+
+    .body-text {
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.9;
+      color: #7a7a7a;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Feature tiles */
+    .features-table {
+      width: 100%;
+      margin-bottom: 48px;
+    }
+
+    .feature-cell {
+      width: 33.33%;
+      text-align: center;
+      padding: 24px 12px;
+      vertical-align: top;
+      border-top: 1px solid #1e1e1e;
+    }
+
+    .feature-icon {
+      font-size: 22px;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .feature-title {
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c9a84c;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .feature-desc {
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      color: #5a5a5a;
+      line-height: 1.5;
+    }
+
+    /* CTA */
+    .cta-section {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #c9a84c;
+      color: #0a0a0a !important;
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 18px 48px;
+      border: none;
+    }
+
+    .cta-sub {
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      color: #3a3a3a;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    /* Location section */
+    .location-section {
+      background: #111;
+      border: 1px solid #1e1e1e;
+      border-top: none;
+      padding: 40px 48px;
+      text-align: center;
+    }
+
+    .location-eyebrow {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      color: #c9a84c;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .location-name {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 32px;
+      font-weight: 300;
+      color: #f5f0e8;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .location-address {
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      color: #5a5a5a;
+      letter-spacing: 0.05em;
+    }
+
+    /* Footer */
+    .footer {
+      background: #050505;
+      padding: 32px 48px;
+      text-align: center;
+      border-top: 1px solid #1a1a1a;
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: #3a3a3a;
+      display: block;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      margin-bottom: 16px;
+    }
+
+    .footer-link {
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: 9px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      color: #3a3a3a !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    .footer-legal {
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 300;
+      color: #2a2a2a;
+      line-height: 1.6;
+    }
+
+    /* Map placeholder */
+    .map-placeholder {
+      width: 100%;
+      height: 140px;
+      background: linear-gradient(135deg, #111 0%, #0d160e 50%, #0a0a0a 100%);
+      display: block;
+      position: relative;
+      text-align: center;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .map-pin {
+      font-size: 32px;
+      line-height: 140px;
+      display: block;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .wrapper { width: 100% !important; }
+      .hero { padding: 40px 24px 0; }
+      .headline { font-size: 46px !important; }
+      .body-section { padding: 40px 24px; }
+      .location-section { padding: 32px 24px; }
+      .footer { padding: 24px; }
+      .feature-cell { display: block; width: 100% !important; }
+    }
+  </style>
+</head>
+<body>
+
+<center>
+<table class="wrapper" width="640" cellpadding="0" cellspacing="0" role="presentation">
+
+  <!-- HERO -->
+  <tr>
+    <td class="hero">
+      <span class="hero-rule"></span>
+      <span class="eyebrow">You are cordially invited</span>
+      <h1 class="headline">Grand<br><em>Opening</em></h1>
+      <p class="sub-headline">in the heart of London</p>
+
+      <!-- Decorative arch SVG -->
+      <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom: -4px;">
+        <tr>
+          <td style="text-align:center; padding-bottom: 0;">
+            <svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block; margin: 0 auto;">
+              <path d="M10 58 Q100 2 190 58" stroke="#c9a84c" stroke-width="0.8" fill="none" opacity="0.6"/>
+              <path d="M30 58 Q100 18 170 58" stroke="#c9a84c" stroke-width="0.4" fill="none" opacity="0.3"/>
+              <circle cx="100" cy="8" r="3" fill="#c9a84c" opacity="0.8"/>
+              <circle cx="10" cy="58" r="2" fill="#c9a84c" opacity="0.4"/>
+              <circle cx="190" cy="58" r="2" fill="#c9a84c" opacity="0.4"/>
+            </svg>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- DATE STRIP -->
+  <tr>
+    <td class="date-strip" style="background-color: #c9a84c; padding: 20px 0;">
+      <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+          <td style="text-align:center; padding: 0 16px; border-right: 1px solid rgba(10,10,10,0.2);" width="33%">
+            <span class="date-label">Date</span>
+            <span class="date-value">14 June<br>2025</span>
+          </td>
+          <td style="text-align:center; padding: 0 16px; border-right: 1px solid rgba(10,10,10,0.2);" width="33%">
+            <span class="date-label">Doors Open</span>
+            <span class="date-value">7:00 PM</span>
+          </td>
+          <td style="text-align:center; padding: 0 16px;" width="33%">
+            <span class="date-label">Dress Code</span>
+            <span class="date-value">Smart<br>Casual</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- BODY -->
+  <tr>
+    <td class="body-section">
+
+      <p class="intro-text">"Something extraordinary is about to open its doors — and we want you there first."</p>
+
+      <div class="divider">
+        <span class="divider-line"></span>
+        <span class="divider-diamond"></span>
+        <span class="divider-line"></span>
+      </div>
+
+      <p class="body-text">
+        We are delighted to invite you to the exclusive opening of <strong style="color:#c5bfb3; font-weight:600;">[Your Business Name]</strong> — a new chapter in the story of central London. Join us for an unforgettable evening of celebration, discovery, and connection as we open our doors for the very first time.<br><br>
+        Expect champagne on arrival, live music, and a first look at everything we have created — just for you.
+      </p>
+
+      <!-- Feature tiles -->
+      <table class="features-table" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+          <td class="feature-cell">
+            <span class="feature-icon">🥂</span>
+            <span class="feature-title">Welcome Drinks</span>
+            <span class="feature-desc">Champagne & cocktails on arrival</span>
+          </td>
+          <td class="feature-cell" style="border-left: 1px solid #1e1e1e; border-right: 1px solid #1e1e1e;">
+            <span class="feature-icon">🎶</span>
+            <span class="feature-title">Live Music</span>
+            <span class="feature-desc">Curated performances throughout the evening</span>
+          </td>
+          <td class="feature-cell">
+            <span class="feature-icon">🏛️</span>
+            <span class="feature-title">Exclusive Preview</span>
+            <span class="feature-desc">Be among the very first inside</span>
+          </td>
+        </tr>
+      </table>
+
+      <!-- CTA -->
+      <div class="cta-section">
+        <a href="#" class="cta-button">Reserve Your Place</a>
+        <p class="cta-sub">Limited spaces available &nbsp;·&nbsp; RSVP by 7 June 2025</p>
+      </div>
+
+    </td>
+  </tr>
+
+  <!-- MAP PLACEHOLDER -->
+  <tr>
+    <td class="map-placeholder" style="background: linear-gradient(135deg, #111 0%, #0d160e 50%, #0a0a0a 100%); height: 140px; text-align:center;">
+      <span class="map-pin">📍</span>
+    </td>
+  </tr>
+
+  <!-- LOCATION -->
+  <tr>
+    <td class="location-section">
+      <span class="location-eyebrow">Where to Find Us</span>
+      <span class="location-name">Central London</span>
+      <span class="location-address">12 King's Street &nbsp;·&nbsp; Covent Garden &nbsp;·&nbsp; London WC2E 8JD</span>
+
+      <div class="divider" style="margin: 24px 0 0;">
+        <span class="divider-line"></span>
+        <span class="divider-diamond"></span>
+        <span class="divider-line"></span>
+      </div>
+
+      <p style="font-family: Montserrat, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 300; color: #3a3a3a; margin-top: 20px; letter-spacing: 0.05em;">
+        Nearest stations: Covent Garden (Piccadilly) &nbsp;·&nbsp; Charing Cross (Thameslink, National Rail)
+      </p>
+    </td>
+  </tr>
+
+  <!-- FOOTER -->
+  <tr>
+    <td class="footer">
+      <span class="footer-brand">[Your Business Name]</span>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Website</a>
+        <a href="#" class="footer-link">Instagram</a>
+        <a href="#" class="footer-link">Contact</a>
+        <a href="#" class="footer-link">Unsubscribe</a>
+      </div>
+      <p class="footer-legal">
+        You are receiving this invitation because you are a valued guest or contact.<br>
+        © 2025 [Your Business Name]. All rights reserved.<br>
+        [Company Address] &nbsp;·&nbsp; London, United Kingdom
+      </p>
+    </td>
+  </tr>
+
+</table>
+</center>
+
+</body>
+</html>
